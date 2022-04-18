@@ -2,6 +2,7 @@
 body {
     box-sizing: border-box;
     color: white;
+    
 }
 
 /* attribution styles */
@@ -23,8 +24,8 @@ body {
 }
   
 .box {
-    width: 20vw;
-    height: 55vh;
+    width: 22vw;
+    height: 60vh;
     border: 1px solid black;
 
 }
@@ -44,6 +45,25 @@ body {
 }
 
 /* text styles */
-h2,p {
+
+p {
+    font-family: "Lexend Deca" , sans-serif;
+    font-size: 0.9375rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+
+}
+h1,p {
     border: 1px solid black;
+    width:18vw;
+    margin-left: 11%;
+}
+img {
+     margin:10% 0 0 11%;
+     border: 1px solid black;
 }
