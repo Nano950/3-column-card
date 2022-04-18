@@ -1,3 +1,9 @@
+
+body {
+    box-sizing: border-box;
+    color: white;
+}
+
 /* attribution styles */
 .attribution { 
     font-size: 11px; text-align: center;
@@ -7,3 +13,32 @@
     color: hsl(228, 45%, 44%);
 }
 
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 96vh;
+    border: 1px solid black;
+}
+  
+.box {
+    width: 20vw;
+    height: 55vh;
+    border: 1px solid black;
+
+}
+
+.sedans {
+    border-radius: 2.5% 0 0 2.5%;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 2.5% 2.5% 0;
+}
