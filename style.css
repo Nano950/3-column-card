@@ -20,13 +20,13 @@ body {
     align-items: center;
     width: 100%;
     height: 96vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
   
 .box {
-    width: 22vw;
-    height: 60vh;
-    border: 1px solid black;
+    width: 20vw;
+    height: 67vh;
+    /* border: 1px solid black; */
 
 }
 
@@ -48,24 +48,26 @@ body {
 
 p {
     font-family: "Lexend Deca" , sans-serif;
-    font-size: 0.9375rem;
+    font-size: 16px;
     color: hsla(0, 0%, 100%, 0.75);
-    
+    height: 30vh;
+    line-height: 1.6875em;
 }
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
+    font-size: 48px;
 
 }
 h1,p {
-    border: 1px solid black;
-    width:18vw;
-    margin-left: 11%;
+    /* border: 1px solid black; */
+    width:13vw;
+    margin-left: 18%;
 }
 img {
-     margin:10% 0 0 11%;
-     border: 1px solid black;
+    margin:10% 0 0 18%;
+    /* border: 1px solid black; */
 }
 
 /* button styles */
@@ -74,27 +76,68 @@ img {
     background-color: #ffffff;
     border: none;
     border-radius: 30px 30px 30px 30px;
-    
     padding: 15px 32px;
-    /* position: relative; */
+    position: relative;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-family: "Lexend Deca" , sans-serif;
-    margin: 4px 2px 0 11%;
+    margin: 4px 2px 0 18%;
     cursor: pointer;
-    border: 1px solid black;
-  }
+    /* border: 1px solid black; */
+}
 
   .sedans .button {
-     color: hsl(31, 77%, 52%);
-  }
+    color: hsl(31, 77%, 52%);
+}
 
   .suvs .button {
-     color: hsl(184, 100%, 22%);
-  }
+    color: hsl(184, 100%, 22%);
+}
 
-  .luxury .button {
-     color: hsl(179, 100%, 13%);
-  }
+.luxury .button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans .button:active {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.suvs .button:active {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.luxury .button:active {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 375px), (orientation: portrait) {
+    #container {
+        flex-direction: column;
+        height: 230vh;
+    }
+
+    .box {
+        width:90%;
+    }
+
+    p, h1 {
+        width: 65%;
+    }
+
+    .sedans {
+        border-radius: 2.5% 2.5% 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 2.5% 2.5%;
+      }
+
+}
