@@ -67,3 +67,34 @@ img {
      margin:10% 0 0 11%;
      border: 1px solid black;
 }
+
+/* button styles */
+
+.button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    
+    padding: 15px 32px;
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Lexend Deca" , sans-serif;
+    margin: 4px 2px 0 11%;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+  .sedans .button {
+     color: hsl(31, 77%, 52%);
+  }
+
+  .suvs .button {
+     color: hsl(184, 100%, 22%);
+  }
+
+  .luxury .button {
+     color: hsl(179, 100%, 13%);
+  }
